@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言墙</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+         aside{
+            width: 30%;
+            height: 100%;
+            float: left;
+            color:lime;
+        }
+        section{
+            width: 69%;
+            height: 100%;
+            float: right;
+            font-size: large;
+            position: relative;
+            text-align: center;
+        }
+        strong
+        {
+          color: red;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="heard">
+        <div class="top">
+          <div class="background"><img src="image/1.jpg" width="398" height="86" /></div>
+        </div>
+        </div>
+          <div class="nav">
+            <div class="nav_main">
+              <ul id="nav_all">
+                <li><a href="index.html">首页</a></li>
+                <li class="spale"></li>
+                <li><a href="#">学校概况</a>
+                  <ul>
+                    <li><a href="学校简历.html">学校简介</a></li>         
+                    <li><a href="校园风光.html">校园风光</a></li>
+                    <li><a href="校园文化.html">学校文化</a></li>
+                  </ul>
+                </li>
+                        <li></li>
+                <li><a href="#">新闻频道 </a>
+                  <ul>
+                    <li><a href="#">学校新闻</a></li>
+                    <li><a href="通知公告.html">通知公告</a></li>
+                    <li><a href="#">校园动态</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                <li><a href="#"> 教育科研</a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">教学园地</a></li>
+                    <li><a href="#">校本教研</a></li>
+                    <li><a href="#">成果展示</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                <li><a href="#">德育天地</a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">德育案例</a></li>
+                    <li><a href="#">心理健康</a></li>
+                                <li><a href="#">师德师风</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                <li><a href="#">党建工作</a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">组织机构</a></li>
+                    <li><a href="#">群团信息</a></li>
+                    <li><a href="#">专题聚焦</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                <li><a href="#">学校风采 </a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">优秀学生</a></li>
+                    <li><a href="社团活动.html">社团活动</a></li>
+                    <li><a href="#">学生作品</a></li>
+                  </ul>
+                </li>  
+                        <li class="spale"></li>
+                        <li><a href="#">教工之家  </a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">政策法规</a></li>
+                    <li><a href="#">教工活动</a></li>
+                    <li><a href="#">规章制度</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                        <li><a href="#">在线留言  </a>
+                  <ul>
+                    <li></li>
+                    <li><a href="#">学习交流</a></li>
+                    <li><a href="留言墙.html">留言墙</a></li>
+                  </ul>
+                </li>
+                        <li class="spale"></li>
+                        <li><a href="#">活动专栏 </a></li> 
+                        <li class="spale"></li>          
+              </ul>
+              
+            </div>
+          </div>
+          <div id="carousel">
+            <ul> <!-- 图片容器 -->
+                <li>
+                    <img src="image/2.jpg">
+                </li>
+                <li>
+                    <img src="image/3.jpg">
+                </li>
+                <li>
+                    <img src="image/5.jpg">
+                </li>
+                <li>
+                    <img src="image/7.jpg">
+                </li>
+            </ul>
+        </div>
+    <div>
+        <aside>
+         今日新院推荐美食如下:
+         <strong>热奶包</strong><br>
+        <pre>
+               最近在小红书、朋友圈都出现了一款被称为“新型诈骗”的甜点小吃——热奶宝，吃一口就上头，
+               软软糯糯的超好吃！非常适合做为茶饮门店在冬季引流的一款热饮冰淇淋！
+            热奶宝是什么你知道吗
+            
+            热奶宝是一种来自河南新乡的传统甜品小吃，用脆筒糯米饭甜奶油，口感糯叽叽，香香甜甜，
+            目前已经升级到各种版本，成为秋冬的摆摊新品，非常受年轻人喜欢。        
+            最近的问候语都变为：“你的城市有热奶宝吗？”今天教大家在家也能做！
+            摆摊一分钟秒完的！人见人爱的热奶宝做法~简单几步就完成啦！！
+
+            
+        </pre>
+        制作视频如下:<br>
+        <section>
+            <input type="button" value="放大" onclick="makeBig()">
+            <input type="button" value="缩小" onclick="makeSmall()">
+            <input type="button" value="播放/暂停" onclick="makePlay()"><br>
+            <video src="video/rnb.webm" width="300px" height="300px" id="myvd"></video>
+        </section>
+        <script>
+            var myvd=document.getElementById("myvd");
+            function makePlay(){
+              if(myvd.paused){
+                  myvd.play();
+              }
+              else(
+                  myvd.pause()
+              )
+            }
+            function makeBig(){
+                myvd.width+=50;
+            }
+            function makeSmall(){
+              myvd.width-=50;
+            }
+          </script>
+
+        </aside>
+          
+        <section>
+            <h1>个人信息填写</h1>
+             用户名：<input type="text" name="user" size="10" maxlength="6" placeholder="名字" autofocus list="namelist"><br>    
+                密码：<input type="password" name="pas" id="" required><br>
+                性别：<input type="radio" name="xb" id="">男
+                <input type="radio" name="xb" id="" checked>女<br>
+                爱好：<input type="checkbox" name="ah" id="" checked>阅读
+                <input type="checkbox" name="ah" id="">运动
+                <input type="checkbox" name="ah" id="" checked>旅游
+                <input type="checkbox" name="ah" id="">音乐<br>
+                电邮：<input type="email" name="" id=""><br>
+                个人网址：<input type="url" name="" id=""><br>
+                手机: <input type="tel" name="" id="" pattern="^1[3|5|8|9][0-9]{9}$"><br>
+                搜索：<input type="search" name="" id=""><br>
+                年龄：<input type="number" name="" id="" min="18" max="60" step="2"><br>
+                幸运色：<input type="color" name="" id="" value="#ff0000"><br>
+                出生年月：<input type="date" name="" id="">
+                <input type="button" value="普通按钮">
+                <input type="submit" value="提交">
+                <input type="reset" value="重置">
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>校园风光</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    table {
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .table tr {
+      border: none;
+    }
+    .table td {
+      width: 250px;
+      height: 120px;
+      border: 1px inset blue;
+    }
+    .table td:hover {
+      cursor: pointer;
+      border: 1px outset red;
+    }
+    img {
+      width: 200px;
+      height: 120px;
+    }
+    aside{
+            width: 30%;
+            height: 100%;
+            float: left;
+        }
+        section{
+            width: 69%;
+            height: 100%;
+            background-color: aliceblue;
+            float: right;
+            font-size: large;
+            position: relative;
+            text-align: center;
+
+        }
+      td{
+				overflow: hidden;
+			}
+			tr td img{
+				cursor: pointer;
+				transition: all 0.6s;
+			}
+			td img:hover{
+				transform: scale(1.4);
+			}
+
+      .one{
+          width: 100px;
+          height: 50px;
+          background-color: cornflowerblue;
+          margin: 3px auto;
+          text-align: center;
+          line-height: 50px;
+        }
+        .two{
+          width: 100px;
+          height: 50px;
+          background-color: cornflowerblue;
+          margin: 3px auto;
+          text-align: center;
+          line-height: 50px;
+        }
+        .three{
+          width: 100px;
+          height: 50px;
+          background-color: cornflowerblue;
+          margin: 3px auto;
+          text-align: center;
+          line-height: 50px;
+        }
+        .four{
+          width: 100px;
+          height: 50px;
+          background-color: cornflowerblue;
+          margin: 3px auto;
+          text-align: center;
+          line-height: 50px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+        a:hover{
+          color: red;
+          text-decoration: dashed;          
+        }
+        .six{
+          margin: 10px auto;
+          text-align: center;
+          line-height: 50px;
+        }
+        .background img{
+          height: 86px;
+          width: 398px;
+        }
+  </style>
+</head>
+<body>
+  <div class="heard">
+    <div class="top">
+      <div class="background"><img src="image/1.jpg" width="398" height="86" /></div>
+    </div>
+    </div>
+      <div class="nav">
+        <div class="nav_main">
+          <ul id="nav_all">
+            <li><a href="index.html">首页</a></li>
+            <li class="spale"></li>
+            <li><a href="#">学校概况</a>
+              <ul>
+                <li><a href="学校简历.html">学校简介</a></li>         
+                <li><a href="校园风光.html">校园风光</a></li>
+                <li><a href="校园文化.html">学校文化</a></li>
+              </ul>
+            </li>
+                    <li></li>
+            <li><a href="#">新闻频道 </a>
+              <ul>
+                <li><a href="#">学校新闻</a></li>
+                <li><a href="通知公告.html">通知公告</a></li>
+                <li><a href="#">校园动态</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+            <li><a href="#"> 教育科研</a>
+              <ul>
+                <li></li>
+                <li><a href="#">教学园地</a></li>
+                <li><a href="#">校本教研</a></li>
+                <li><a href="#">成果展示</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+            <li><a href="#">德育天地</a>
+              <ul>
+                <li></li>
+                <li><a href="#">德育案例</a></li>
+                <li><a href="#">心理健康</a></li>
+                            <li><a href="#">师德师风</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+            <li><a href="#">党建工作</a>
+              <ul>
+                <li></li>
+                <li><a href="#">组织机构</a></li>
+                <li><a href="#">群团信息</a></li>
+                <li><a href="#">专题聚焦</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+            <li><a href="#">学校风采 </a>
+              <ul>
+                <li></li>
+                <li><a href="#">优秀学生</a></li>
+                <li><a href="#">社团活动</a></li>
+                <li><a href="#">学生作品</a></li>
+              </ul>
+            </li>  
+                    <li class="spale"></li>
+                    <li><a href="#">教工之家  </a>
+              <ul>
+                <li></li>
+                <li><a href="#">政策法规</a></li>
+                <li><a href="#">教工活动</a></li>
+                <li><a href="#">规章制度</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+                    <li><a href="#">在线留言  </a>
+              <ul>
+                <li></li>
+                <li><a href="#">学习交流</a></li>
+                <li><a href="留言墙.html">留言墙</a></li>
+              </ul>
+            </li>
+                    <li class="spale"></li>
+                    <li><a href="#">活动专栏 </a></li> 
+                    <li class="spale"></li>          
+          </ul>
+          
+        </div>
+      </div>
+      <div id="carousel">
+        <ul> <!-- 图片容器 -->
+            <li>
+                <img src="image/2.jpg">
+            </li>
+            <li>
+                <img src="image/3.jpg">
+            </li>
+            <li>
+                <img src="image/5.jpg">
+            </li>
+            <li>
+                <img src="image/7.jpg">
+            </li>
+        </ul>
+    </div>
+  <h4>校园风光</h4>
+  <div>
+    <aside>
+      <div class="one"><a href="学校简历.html">学校简历</a></div>
+      <div class="three"><a href="校园文化.html">学校文化</a></div>
+      <div class="four"><a href="#">校园风光</a></div>
+    </aside>
+    <section>
+      <table class="table">
+        <tr>
+          <td><a href="图书馆.html"><img src="image/1.jpg" alt=""></a></td>
+          <td><a href="教学资源.html"><img src="image/2.jpg" alt=""></a></td>
+          <td><img src="image/3.jpg" alt=""></td>
+          </tr>
+        <tr>
+          <td><img src="image/4.jpg" alt=""></td>
+          <td><img src="image/5.jpg" alt=""></td>
+          <td><img src="image/6.jpg" alt=""></td>
+        </tr>
+        <tr>
+          <td><img src="image/7.jpg" alt=""></td>
+          <td><img src="image/8.jpg" alt=""></td>
+          <td><img src="image/9.jpg" alt=""></td>
+        </tr>
+      </table>
+    </section>
+  </div>
+</body>
+</html>
